@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/moviesFragment">
+
+    <fragment
+        android:id="@+id/moviesFragment"
+        android:name="com.muratcay.movieapp.ui.movies.fragment.MoviesFragment"
+        android:label="MoviesFragment">
+        <action
+            android:id="@+id/action_moviesFragment_to_genresFragment"
+            app:destination="@id/genresFragment" />
+        <action
+            android:id="@+id/action_moviesFragment_to_categoryFragment"
+            app:destination="@id/categoryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/genresFragment"
+        android:name="com.muratcay.movieapp.ui.genre.fragment.GenresFragment"
+        android:label="GenresFragment">
+        <action
+            android:id="@+id/action_genresFragment_to_categoryFragment"
+            app:destination="@id/categoryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/categoryFragment"
+        android:name="com.muratcay.movieapp.ui.category.fragment.CategoryFragment"
+        android:label="CategoryFragment" />
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.muratcay.movieapp.ui.search.fragment.SearchFragment"
+        android:label="SearchFragment" />
+    <action
+        android:id="@+id/action_global_searchFragment"
+        app:destination="@id/searchFragment"
+        app:launchSingleTop="true"/>
+</navigation>

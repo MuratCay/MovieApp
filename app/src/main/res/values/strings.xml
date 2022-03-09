@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">MovieApp</string>
+    <string name="title_film">Film</string>
+    <string name="search_title">Arama</string>
+    <string name="ara">Ara</string>
+    <string name="search_icon_text">Search Icon</string>
+    <string name="local_movies">Yerli Filmler</string>
+    <string name="popular_movies">Bu Hafta En Çok İzlenenler</string>
+    <string name="tr">tr</string>
+    <string name="this_year">Bu Senenin Filmleri</string>
+</resources>
